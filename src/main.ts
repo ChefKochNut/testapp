@@ -26,7 +26,12 @@ import './theme/variables.css';
 const app = createApp(App)
   .use(IonicVue)
   .use(router);
-  
-router.isReady().then(() => {
-  app.mount('#app');
+
+import useDb from "@/composables/useDb";
+const { initDb } = useDb();
+
+initDb().then(() => {
+  router.isReady().then(() => {
+    app.mount('#app');
+  });
 });

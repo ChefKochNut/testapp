@@ -7,9 +7,12 @@
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
     "test:e2e": "vue-cli-service test:e2e",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "android": "ionic cap copy && ionic cap open android"
   },
   "dependencies": {
+    "@capacitor-community/sqlite": "^3.4.2-3",
+    "@capacitor/android": "^3.4.3",
     "@capacitor/app": "1.1.1",
     "@capacitor/core": "3.4.3",
     "@capacitor/haptics": "1.1.4",
@@ -18,6 +21,7 @@
     "@ionic/vue": "^6.0.0",
     "@ionic/vue-router": "^6.0.0",
     "core-js": "^3.6.5",
+    "typeorm": "^0.3.4",
     "vue": "^3.2.21",
     "vue-router": "^4.0.12"
   },
